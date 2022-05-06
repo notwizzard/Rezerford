@@ -51,6 +51,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -224,7 +226,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 9bfa2e35e195f13c25a3cdf76281f829
+      Hash: d1b382f7b068442b8bb522884ca61631
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AlphaController
@@ -585,4 +587,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/experiment3d.unity
-  playerPath: C:/Users/mimor/Rezerford/physics.exe
+  playerPath: C:/Users/mimor/Unity Projects/physics/Rezerford (Build)/physics.exe

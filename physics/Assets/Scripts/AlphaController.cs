@@ -19,7 +19,6 @@ public class AlphaController : MonoBehaviour
     [SerializeField] private Color _colorTo;
     private Color _colorFrom;
     [SerializeField] private float _minAngle, _maxAngle;
-    [SerializeField] private float _secondAtomZ;
 
     private Gistogram _gistogram;
 
@@ -79,12 +78,12 @@ public class AlphaController : MonoBehaviour
         if (other.gameObject.CompareTag("Aurum"))
         {
             _underForce = false;
+        }
+        if (other.gameObject.CompareTag("AurumZone"))
+        {
             float angle = Vector3.Angle(_direction, _rigidbody.velocity);
-            
-            if (transform.position.z >= _secondAtomZ)
-            {
-                _gistogram.AddAngle(angle);
-            }
+
+            _gistogram.AddAngle(angle);
 
             float t = (Mathf.Clamp(angle, _minAngle, _maxAngle) - _minAngle) / (_maxAngle - _minAngle);
             Color newColor = Color.Lerp(_colorFrom, _colorTo, t);
